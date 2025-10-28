@@ -57,7 +57,7 @@ class RitRatingsTest extends AbstractWebTest {
     final RatingInfoView coopRatingInfo = ratingInfoViews.get(2);
     assertAll("group assertions"
       , () -> assertEquals("Top School for Co-op or Internship Programs", coopRatingInfo.getTitle())
-      , () -> assertEquals("#6", coopRatingInfo.getRating())
+      , () -> assertEquals("#5", coopRatingInfo.getRating())
     );
   }
 }
