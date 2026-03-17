@@ -39,7 +39,7 @@ public class RitHomePage extends AbstractPage {
     // WARN: this is fragile code
     return mainContentPanel.findChildBy(By.xpath("div[5]"))
       // scroll the "Areas of Study" list into view
-      .doWith(listElement -> scrollToTopOfElement(listElement))
+      .doWith(listElement -> scrollIntoView(listElement))
       // the statistics columns are organized in a layout div
       .findChildBy(By.cssSelector("div.row"))
       // extract each statistics column
@@ -58,7 +58,7 @@ public class RitHomePage extends AbstractPage {
     // WARN: this is fragile code
     return mainContentPanel.findChildBy(By.xpath("div[8]"))
       // scroll the "Areas of Study" list into view
-      .doWith(listElement -> scrollToTopOfElement(listElement))
+      .doWith(listElement -> scrollIntoView(listElement))
       // the curriculum links are organized in an unordered list embedded in a layout div
       .findChildBy(By.cssSelector("div.row ul"))
       // extract each curriculum link
